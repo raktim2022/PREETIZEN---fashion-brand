@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Boska;
+  src: url("../../public/Boska-Variable.ttf");
+}
+@font-face {
+  font-family: BoskaItalic;
+  src: url("../../public/Boska-VariableItalic.ttf");
+}
+
+:root {
+  --background: #fdf8f2;
+  --foreground: #171717;
+  --primary: #d46a6a;
+  --accent: #a7bfa3;
+  --text: #333333;
+  --heading: #6b4f3b;
+  --highlight: #e1b866;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* Preloader specific styles */
+.preloader-message-fade {
+  animation: messageFade 0.5s ease-in-out;
+}
+
+@keyframes messageFade {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Smooth font rendering for preloader */
+.preloader-text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Animation utilities */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.related_products::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
+}
