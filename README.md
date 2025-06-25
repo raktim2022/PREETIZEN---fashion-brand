@@ -1,3 +1,4 @@
+![PREETIZEN---fashion-brand](https://socialify.git.ci/raktim2022/PREETIZEN---fashion-brand/image?custom_language=Next.js&font=JetBrains+Mono&language=1&name=1&owner=1&pattern=Circuit+Board&stargazers=1&theme=Auto)
 # PREETIZEN 🌟
 *Making Stories Wearable*
 
